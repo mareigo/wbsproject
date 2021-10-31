@@ -1,0 +1,165 @@
+@media screen and (max-width:1380px){
+  [class*="col66"]{
+    width: 50%;
+  } 
+}
+
+@media screen and (max-width:900px){
+  [class*="col"]{width:100%;}
+  [class*="col"].pad,[class*="col"].mar{width:98%;}
+  [class*="col"].pad.mar{width:96%;}
+
+  .wrap{
+    margin-left:2%;
+    padding: 0;
+  } 
+  body:before{
+    width:2%;
+    border-right:3px #7f9eca dashed;
+  }
+  .content{
+    width: 100%;
+    margin:0 10px;
+    border:none;
+    box-shadow: none;
+    overflow:visible;
+  }
+  img{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  textarea{
+    width:80%;
+  }
+
+  #unterseite_auswahl a{
+    display:block;
+    float:left;
+    min-height:22em;
+    width:100%;
+    margin-bottom:10px;
+    padding:0;
+  }
+  
+  #mareike_foto{
+    width:350px;
+    height:auto;
+  }
+
+}
+
+/* schmalste Darstellung*/
+@media screen and (max-width:700px){
+  body:before{
+    position: absolute;
+    top:0;
+    width:100%;
+    height:68px;
+    border-bottom:3px #7f9eca solid;
+    border-right:none;
+    background-image: none;
+    z-index: -1;
+  }
+  .wrap{
+    margin-top:50px;
+    margin-left: 0;
+    z-index:0;
+  } 
+  .content{
+    position: relative;
+    top:21px; 
+    margin-left:auto;
+    margin-right: auto;
+  }
+
+  #logo{
+    display: block;
+    position: absolute;
+    height:50.5px;
+    width: 182.21px;
+    top:0px;
+    right:10px;  
+  }
+  #logo a{
+    background:url(../img/logo.png) transparent no-repeat;
+    height:50.5px;
+    width: 182.21px;
+    background-size:contain;
+  }
+
+/* Hamburger Nav */
+  nav{
+    top:10px;
+    position: absolute;
+    z-index:1;
+    border:none;
+  }
+  nav li{
+    float:none;
+    background: #fff;
+    padding:5px 20px;
+  }
+  
+  nav ul li ul{
+    position:static;
+    padding-left: 20px;
+  }
+  nav li:hover > ul,nav li:focus-within > ul,nav li:focus > ul{
+    float:none;
+    border:none;
+    position:static;
+    margin:0;
+    margin-left:-20px;
+    margin-right:-20px;
+    width: calc(100% + 20px);
+  }
+  
+  ul ul li:first-child.active{
+    border-top:2px solid #fff; 
+  }
+  ul ul li:last-child.active{
+    border-bottom:2px solid #fff; 
+  }
+
+  ul.show > li:last-child{
+    border-bottom:3px #7f9eca dashed;
+    box-shadow: 0 16px 12px -7px rgb(150, 150, 150);
+  }
+  
+  nav .open,nav .close{
+    width: 48px;
+  }
+  a .hamb {
+    margin-left:5px;
+    font-size:2.5em; 
+  }
+  a.close ,a.open {
+    text-decoration: none; 
+  }
+ 
+  ul ul{ 
+    margin-left:-20px;
+    margin-right:-20px;
+  }
+  
+  .open{display:block;}
+  .close{display:none;}
+
+  .show{
+    position: relative;
+    top: -99em;
+    width: 0px;
+    height: 0px;
+    }
+
+  .open:target{display:none;}
+  .open:target + .close{display:inline-block;}
+  .open:target ~ .show{
+    top: 3px;
+    width: auto;
+    height: auto;
+    transition: all 0.4s;
+   }
+
+
+}

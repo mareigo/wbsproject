@@ -1,0 +1,141 @@
+html{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size:100.01%;	
+  color:#476287;
+  text-align:left;  
+  direction:ltr;
+ -ms-hyphens:auto;
+ -webkit-hyphens:auto;
+ -moz-hyphens:auto;
+  hyphens:auto;
+  background:#fff;
+}
+
+body{
+  margin:0; 
+}
+
+/* Überschriften */
+h1,h2,h3,h4,h5,h6{
+  color:#de7a62;
+  margin-top: 0;
+}
+
+/* Weitere Überschriften */
+h1{font-size:200%;}
+h2{font-size:150%;}
+h3{font-size:120%;}
+
+p{
+  font-size:110%;
+  margin-top: 10px;
+}
+
+ul,ol{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+}
+
+/* Interaktive Elemente */
+a{
+  color:#476287;
+  text-decoration:none;
+}
+
+a:hover,a:focus{  
+  color:#de7a62;
+  text-decoration: underline;
+}
+
+.active,.active > a{
+  background:#476287;
+  color:#fff;
+  text-decoration: none;
+}
+
+img{
+  display:block;
+  background:#ccc;
+  max-width: 100%;
+  min-height: 100%;
+  margin-bottom:2em;
+  box-shadow:1px 10px 15px rgb(180, 180, 180);
+}
+li a + img{
+  width:10%;
+  height:10%;
+}
+
+body:before{
+  content:"";
+  display: block;
+  position: fixed;
+  background:url("../img/strand.png") #fce26c top no-repeat;
+  left:0;
+  top:0;
+  bottom:0;
+  height: auto;
+  width:15%;
+}
+
+label{
+  min-width:100px;
+  display:inline-block;
+  margin:5px;
+}
+input{
+  margin-bottom: 10px;
+}
+
+select {
+  font-size:1em;
+  margin: 0px;
+  outline: none;
+  scrollbar-width: none;
+  margin-bottom:10px;
+}
+
+select option{
+  padding: 2px 5px;
+}
+
+input[type="text"],input[type="password"],textarea,select{
+  border:2px solid #7f9eca;
+  color:#476287;
+  min-height: 30px;
+  min-width: 200px;
+  font-size: 1em;
+}
+
+
+input[type="checkbox"] {
+  width: 20px;
+  margin-right:5px;
+}
+
+textarea{
+  padding:1%;
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+input:hover,textarea:hover,select:hover{ 
+  border-color:#9dc4fa;
+}
+input:focus,textarea:focus,select:focus{
+  background:#fce26c;
+}
+button,[type="submit"],[type=reset],.btn{
+  border:none;
+  background:none;
+  font-size: 1em;
+  color:#fff;
+  padding:8px;
+  background:#de7a62;
+}
+
+article{
+  margin-bottom: 2em;
+  padding-bottom: 20px;
+}

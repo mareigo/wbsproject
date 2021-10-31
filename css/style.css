@@ -1,0 +1,224 @@
+/* Navigation */
+nav{
+  border-bottom:3px #7f9eca solid;
+  width: 100%;
+}
+
+nav li{
+ float:left;
+ padding:10px;
+}
+nav a{
+  display: block;
+  line-height:48px;
+}
+#a_layout:after{
+  content:"▼";
+  margin-left:5px; 
+}
+
+#a_layout {
+  padding-right:8px;
+}
+nav ul li ul a{
+  width:100px;
+}
+
+nav ul li ul{
+  position:absolute;
+  left:-9999em;
+  background:#fff;
+}
+nav li:hover > ul,nav li:focus-within > ul,nav li:focus > ul{
+  float:left;
+  left:auto;
+  margin-top:10px;
+  margin-left:-10px;
+  width:8em;
+  border:3px #7f9eca dashed;
+} 
+
+#logo{
+  display:none;
+}
+
+.close,.open{display:none;}
+
+/* Seiteninhalte */
+
+h3 {
+  margin-bottom: 10px;
+}
+
+.content{
+  max-width:80%;
+  min-height: 400px;
+  max-height: 750px;
+  border-right:3px #7f9eca dashed;
+  border-bottom:3px #7f9eca dashed;
+  border-left:3px #7f9eca dashed;
+  box-shadow:7px 10px 15px rgb(180, 180, 180);
+  padding: 20px;
+  overflow:auto;
+}
+
+.content_text{
+  padding:0;
+  margin:0;
+}
+
+#mareike_foto{
+  height:400px;
+  width: auto;
+  box-shadow: none;
+}
+
+#unterseite_auswahl a{
+  display: block;
+  float:left;
+  background: #7f9eca;
+  height: 15em;
+  width:15em;
+  margin:2%;
+  color:#fff;
+  border:2px solid #7f9eca;
+  overflow:hidden;
+  font-weight: bold;
+}
+#unterseite_auswahl a:hover,#unterseite_auswahl a:focus{
+  opacity: 0.9;
+  text-decoration: none;
+}
+#unterseite_auswahl li{
+  height: 100%; 
+}
+
+#unterseite_auswahl img{
+  object-fit: contain;
+}
+#img_banner,#img_card {
+  background: #476287;
+} 
+
+/* Formular-Pflichtfeld */
+.required label:after, p.required:after, span.required:after{
+  content:" " "*";
+  color:crimson;
+}
+
+p.required {
+  font-size:100%;
+}
+
+.fail { background-image: url("../img/cross.png"); }
+.pass { background-image: url("../img/tick.png"); }
+.fail, .pass {
+  background-repeat: no-repeat; 
+  background-position: top right;}
+
+
+
+/* Formular */
+#contact_email,#contact_tel {
+  max-width: 20px;
+}
+
+label[for="no_title"] {
+  margin-right: 25px;
+}
+#title_male {
+  margin-left: -30px;
+}
+
+form p {
+  margin-bottom: 5px;
+}
+
+#btn_contact {
+  margin-bottom: 30px;
+}
+
+#btn_contact,#agb {
+  margin-top: 10px;
+}
+
+.alert { color: crimson; }
+
+#php_success {
+  display: block;
+  position: absolute;
+  top: 25%;
+  left:35%;
+  background: #de7a62;
+  color:#fff;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  width: 300px;
+  box-shadow: 2px 4px 8px rgb(180, 180, 180);
+}
+.shadow {
+  opacity: 0.5;
+}
+
+/*------------*/
+
+.first_pic{
+  margin-bottom:40px;
+}
+
+.border_bottom{
+  border-bottom:3px #7f9eca dashed;
+}
+
+.center{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.content.impressum{
+  max-width: 40%;
+}
+.content.kontakt{
+    max-width: 70%;
+}
+
+.textlink{
+  text-decoration: underline;
+}
+
+
+/*----------Blog-----------*/
+
+.blogimg {
+  max-height: 300px;
+  box-shadow: 2px 4px 8px rgb(180, 180, 180);
+}
+
+#old_img_name, #old_img_src, #old_text_entry, #old_headline {
+  display: none;
+}
+
+#text_entry {
+  display: block;
+}
+
+.entry{
+  margin: 20px 0;
+  background: rgb(243, 243, 243);
+  padding: 20px;
+}
+
+.entry p {
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-bottom: 40px;
+  font-size: 0.9em;
+}
+
+.updated {
+  color:crimson;
+  font-size: 0.9em;
+}

@@ -1,0 +1,42 @@
+/* Wrapper */
+.wrap{
+  margin-left:15%;
+}
+
+.col25{width:25%;}
+.col33{width:33.3333%;}
+.col50{width:50%;}
+.col66{width:66.6666667%;}
+.col75{width:75%;}
+.col100{width:100%;}
+
+/* adptives Spaltenverhalten ausgehend von schmalster Spaltenbreite */
+[class*="col"]{min-width:160px;}
+
+.pad{padding:1%;}
+.mar{margin-left:1%;margin-right:1%;}
+
+.col25.pad,.col25.mar{width:23%;}
+.col33.pad,.col33.mar{width:31.3333%;}
+.col50.pad,.col50.mar{width:48%;}
+.col66.pad,.col66.mar{width:64.6666667%;}
+.col75.pad,.col75.mar{width:73%;}
+.col100.pad,.col100.mar{width:98%;}
+
+.col25.pad.mar{width:21%;}
+.col33.pad.mar{width:29.3333%;}
+.col50.pad.mar{width:46%;}
+.col66.pad.mar{width:62.6666667%;}
+.col75.pad.mar{width:71%;}
+.col100.pad.mar{width:96%}
+
+/* Float */
+.fl-l{float:left;}
+.fl-r{float:right;}
+/* clears */
+.clear,.clearfix:after{clear:both;}
+.clearfix:after{
+  content:"";
+  display:table;
+}
+
